@@ -4,11 +4,6 @@ Desi Etsy is a full-stack MERN (MongoDB, Express, React, Node.js) web applicatio
 
 ---
 
-## 🌐 Live Demo
-
-Frontend: [https://desietsy.netlify.app](https://desietsy.netlify.app)  
-Backend: Hosted on Render
-
 ---
 
 ## 📂 Folder Structure
