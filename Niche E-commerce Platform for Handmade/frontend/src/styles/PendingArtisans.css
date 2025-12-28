@@ -1,0 +1,92 @@
+.pending-artisans-page {
+  padding: 40px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.pending-artisans-page h2 {
+  font-size: 2rem;
+  color: #4a2e20;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.artisan-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.artisan-card {
+  background-color: #fff9f3;
+  border: 1px solid #e5d2c3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artisan-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.artisan-details h4 {
+  margin: 0;
+  color: #4a2e20;
+  font-size: 1.2rem;
+}
+
+.artisan-details p {
+  margin: 4px 0;
+  color: #6b4e36;
+  font-size: 0.95rem;
+}
+
+.artisan-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-approve,
+.btn-reject {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-approve {
+  background-color: #3e7d3e;
+  color: white;
+}
+
+.btn-approve:hover {
+  background-color: #336633;
+}
+
+.btn-reject {
+  background-color: #b22222;
+  color: white;
+}
+
+.btn-reject:hover {
+  background-color: #8b1a1a;
+}

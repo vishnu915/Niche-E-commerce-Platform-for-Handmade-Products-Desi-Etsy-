@@ -1,0 +1,147 @@
+.home-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.shop-heading {
+  font-size: 30px;
+  margin: 16px 0;
+  color: #5c3a2f;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  background: url("/hero.jpg") no-repeat center center/cover;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff5f0;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  animation: fadeIn 0.8s ease;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.featured-artisans {
+  padding: 48px 20px;
+  background-color: #fff3ea;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 20px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.featured-artisans h2 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  color: #5c3a2f;
+  font-weight: 600;
+}
+
+.artisan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.artisan-card {
+  background: #fff;
+  padding: 20px;
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.artisan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.artisan-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 2px solid #c69c81;
+}
+
+.artisan-card h4 {
+  margin: 10px 0 6px;
+  font-size: 20px;
+  color: #6b3f2d;
+  font-weight: 600;
+}
+
+.artisan-card p {
+  font-size: 14px;
+  color: #7c5a43;
+  line-height: 1.4;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .featured-artisans {
+    padding: 0px 16px;
+  }
+}

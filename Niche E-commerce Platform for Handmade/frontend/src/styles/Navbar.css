@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff7e6;
+  padding: 16px 32px;
+  border-bottom: 1px solid #decba4;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(156, 122, 99, 0.1);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #5e412f;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a,
+.logout-btn {
+  text-decoration: none;
+  color: #5e412f;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.logout-btn:hover {
+  background-color: #fbeada;
+  color: #a86f52;
+}
+
+.nav-links .active a {
+  background-color: #fbeada;
+  color: #a86f52;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.logout-btn {
+  padding: 6px 14px;
+  background-color: #e63946;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #5e412f;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff7e6;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-top: 1px solid #decba4;
+    box-shadow: 0 4px 10px rgba(156, 122, 99, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.public-navbar {
+  background-color: #ffe4c4;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(156, 122, 99, 0.1);
+}
+
+.nav-brand .site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5e412f;
+  text-decoration: none;
+}

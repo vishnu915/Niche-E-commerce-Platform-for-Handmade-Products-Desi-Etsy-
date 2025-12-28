@@ -1,0 +1,40 @@
+.filter-sidebar {
+  width: 240px;
+  padding: 20px;
+  background: #fffdfc;
+  border-radius: 12px;
+  border: 1px solid #e2c8b8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.filter-sidebar input,
+.filter-sidebar select {
+  padding: 10px;
+  border: 1px solid #d5b8a6;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fffaf6;
+  transition: box-shadow 0.2s;
+}
+
+.filter-sidebar input:focus,
+.filter-sidebar select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #c69c81;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .filter-sidebar {
+    width: 100%;
+  }
+}

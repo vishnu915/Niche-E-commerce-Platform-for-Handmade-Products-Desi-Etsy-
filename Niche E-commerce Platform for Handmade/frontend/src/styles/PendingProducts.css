@@ -1,0 +1,133 @@
+.pending-products-page {
+  padding: 40px 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.pending-products-page h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #442c19;
+}
+
+.no-products-msg {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.pending-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.pending-product-card {
+  background-color: #fff7f0;
+  border: 1px solid #e6d2c4;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.pending-product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.pending-product-image {
+  max-height: 250px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.no-image-box {
+  background-color: #f0e6dc;
+  color: #866;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+.pending-product-info h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3c2415;
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5a3b2e;
+  margin: 8px 0 12px;
+  line-height: 1.4;
+}
+
+.product-meta,
+.pending-product-info p {
+  font-size: 1rem;
+  color: #432e1c;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+.pending-product-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-approve,
+.btn-reject {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-approve {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.btn-approve:hover {
+  background-color: #225c25;
+}
+
+.btn-reject {
+  background-color: #b22222;
+  color: white;
+}
+
+.btn-reject:hover {
+  background-color: #8b1a1a;
+}
+
+@media screen and (max-width: 768px) {
+  .pending-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .pending-products-page {
+    padding: 40px 10px;
+  }
+
+  .pending-product-card {
+    padding: 15px;
+  }
+}

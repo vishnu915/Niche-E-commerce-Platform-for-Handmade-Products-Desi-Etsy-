@@ -1,0 +1,191 @@
+.admin-orders-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-orders-page h2 {
+  font-size: 2rem;
+  color: #4a2e20;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.no-orders-msg {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.order-filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.order-filter label {
+  font-weight: 500;
+  color: #333;
+}
+
+.order-filter select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #c2a183;
+  background-color: #fff9f2;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.order-filter select:hover {
+  border-color: #b17b56;
+}
+
+.admin-order-card {
+  border: 1px solid #e0c9b6;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: #fffefc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.admin-order-card:hover {
+  transform: scale(1.01);
+}
+
+.admin-order-header p {
+  margin: 6px 0;
+  color: #4a2e20;
+  font-size: 15px;
+}
+
+.admin-order-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 15px;
+  background: #fef4e8;
+  border-radius: 10px;
+  border: 1px dashed #dec2a7;
+}
+
+.admin-order-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 1 260px;
+  background: #fffaf6;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #e8d6c4;
+  transition: background 0.2s;
+}
+
+.admin-order-item:hover {
+  background: #fdf0e2;
+}
+
+.admin-order-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.admin-order-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #3f2b1d;
+}
+
+.admin-order-item p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #6b4e36;
+}
+
+.admin-status-update {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.admin-status-update label {
+  font-weight: 500;
+  color: #444;
+}
+
+.admin-status-update select {
+  padding: 8px 12px;
+  border: 1px solid #c5a889;
+  border-radius: 6px;
+  background-color: #fffaf3;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+.admin-status-update select:hover {
+  border-color: #a8734e;
+}
+
+.admin-status-update button {
+  padding: 8px 16px;
+  background-color: #3a8060;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-status-update button:hover {
+  background-color: #2c6650;
+}
+
+@media (max-width: 768px) {
+  .admin-order-items {
+    flex-direction: column;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .order-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order-filter select {
+    width: 100%;
+  }
+
+  .admin-order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .admin-order-item img {
+    height: 100%;
+    width: 100%;
+    max-height: 250px;
+    height: auto;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-order-card {
+    padding: 16px;
+  }
+}
